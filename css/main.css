@@ -102,9 +102,16 @@ footer-nav li {
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  background-size: cover;
+  height: 100vh;
   position: relative;
+  box-sizing: border-box;
+  padding-top: 10vh;
   
+}
+.hero-home {
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
 }
 
 /* SOCIAL STYLES */
