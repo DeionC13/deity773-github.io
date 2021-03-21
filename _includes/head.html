@@ -1,7 +1,22 @@
 <head>
+
+    {% if page.title %}
+    <title>{{ page.title }} | Test Page</title>
+    {% else %}
     <title>Test Page: Don't Panic</title>
+    {% endif %}
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+        {% else %}
+        <meta name="description" content="This is a Dangerous site.">
+        {% endif %}
+    <link href="/favicon.png" rel="icon">
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
     <link rel="stylesheet" href="https://deity773.github.io/deity773-github.io/css/main.css">
     <meta name="viewport" content="width=350px, initial-scale=1">
 </head>
